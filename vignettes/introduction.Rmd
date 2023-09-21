@@ -1,0 +1,41 @@
+---
+title: "Basic usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Basic usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The main function `nmfbin()` operates on binary matrices like so:
+
+```{r setup}
+library(nmfbin)
+
+# Create a binary matrix for demonstration
+X <- matrix(sample(c(0, 1), 100, replace = TRUE), ncol = 10)
+
+# Perform Logistic NMF
+results <- nmfbin(X, k = 3, optimizer = "mur", init = "nndsvd", loss_fun = "logloss", max_iter = 500)
+```
+
+We can retrieve the final loss value before convergence criteria were reached:
+
+```{r finalloss}
+print(results$convergence[length(results$convergence)])
+```
+
+We can also easily plot the optimization process at every iteration:
+
+```{r convergence}
+plot(results$convergence,
+     xlab = "Iteration",
+     ylab = "Negative log-likelihood loss")
+```

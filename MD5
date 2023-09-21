@@ -1,0 +1,15 @@
+71983bb83958f6676dba3153de522e49 *DESCRIPTION
+12bfa353b0b24ed2bee285b59a1e85bc *LICENSE
+ad2250f64499e32415a1872cfcab607e *NAMESPACE
+7fd21d4c5613b93518d77f44d743e309 *NEWS.md
+f5e24281bd3b5607969e8b4588727263 *R/nmfbin.R
+c075d04a9926d0caa546212d1c269f64 *README.md
+4c16109b91f414fd5e3a9e627df3acf4 *build/vignette.rds
+a3398ce4a2702822d588e377d67359e2 *inst/CITATION
+315eecc9692ef966fc38d8df07c8d534 *inst/doc/introduction.R
+110675e3563b04afa3d708c4eaae159c *inst/doc/introduction.Rmd
+3354815f7b56ef3fc928a75126d0f560 *inst/doc/introduction.html
+fc41378fa1be0898f4e7aa092ab3aa18 *man/nmfbin.Rd
+70f701be21f0fb75c2c2d04d4a5cfc13 *tests/testthat.R
+e8f25fbe6d5d93bf7b8f0e6b8580d3e0 *tests/testthat/test-nmfbin.R
+110675e3563b04afa3d708c4eaae159c *vignettes/introduction.Rmd
